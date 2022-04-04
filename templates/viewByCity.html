@@ -1,0 +1,33 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>Weather List</title>  
+</head>  
+<body>  
+  
+<h3>Weather Information</h3>  
+<table border=5>  
+    <thead>  
+        <td>City</td>  
+        <td>Humidity</td>  
+        <td>Max Temp</td>  
+        <td>Min Temp</td>  
+    </thead>  
+      
+    {% for row in rows %}  
+      
+        <tr>  
+            <td>{{row[0]}}</td>  
+            <td>{{row[1]}}</td>  
+            <td>{{row[2]}}</td>  
+            <td>{{row[3]}}</td>  
+        </tr>  
+      
+    {% endfor %}  
+</table>  
+<br><br>  
+  
+<a href="/">Go back to home page</a>  
+  
+</body>  
+</html>  
